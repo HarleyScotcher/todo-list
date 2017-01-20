@@ -58,6 +58,7 @@ class App extends Component {
   }
  
   render() {
+      //render everything to HTML in the browser
     return (
       <div className="container">
         <header>
@@ -99,7 +100,7 @@ App.propTypes = {
   tasks: PropTypes.array.isRequired,
   incompleteCount: PropTypes.number.isRequired,
   currentUser: PropTypes.object,
-  
+
 };
  
 export default createContainer(() => {
